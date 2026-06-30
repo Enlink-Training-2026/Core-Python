@@ -1,0 +1,12 @@
+# Real-world Example: Student Registration
+name = input("Enter Name: ")
+age = input("Enter Age: ")
+
+print("Welcome", name)
+print("Age:", age)
+
+# Concepts
+
+# input()
+# Variables
+# Strings
