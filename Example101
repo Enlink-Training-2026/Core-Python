@@ -1,0 +1,9 @@
+# Real-world Example: Greeting a User
+
+print("Welcome to Enlink Training")
+print("Learning Python is Fun!")
+
+# Challenge
+# Print your name
+# Print your city
+# Print your favourite food
