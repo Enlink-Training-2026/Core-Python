@@ -1,0 +1,11 @@
+# Fuel Cost Calculator
+distance = float(input("Distance: "))
+mileage = float(input("Mileage: "))
+price = float(input("Fuel Price: "))
+
+fuel = distance / mileage
+cost = fuel * price
+
+print(cost)
+
+# Concepts - Multiple calculations
