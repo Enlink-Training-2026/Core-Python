@@ -1,0 +1,10 @@
+# Marks Calculator
+physics = 80
+chemistry = 75
+maths = 90
+
+average = (physics + chemistry + maths)/3
+
+print(average)
+
+#Concepts - Average
