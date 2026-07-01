@@ -1,0 +1,10 @@
+# Restaurant Bill
+food = 650
+
+gst = food * 0.05
+
+total = food + gst
+
+print(total)
+
+# Concepts - Tax calculation
