@@ -1,0 +1,10 @@
+#Grocery List
+items = []
+
+items.append("Rice")
+items.append("Milk")
+items.append("Bread")
+
+print(items)
+
+#Concepts - append(), Lists
