@@ -1,0 +1,10 @@
+# Login System
+username = input("Username: ")
+password = input("Password: ")
+
+if username == "admin":
+    print("Login Successful")
+else:
+    print("Invalid User")
+
+# Concepts - Comparison operators
