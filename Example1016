@@ -1,0 +1,8 @@
+# Electricity Bill
+units = int(input("Units: "))
+
+bill = units * 8
+
+print("Electricity Bill =", bill)
+
+# Concepts - Input, Calculation
