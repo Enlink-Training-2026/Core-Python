@@ -1,0 +1,10 @@
+# Bank Deposit
+balance = 5000
+
+deposit = int(input("Deposit: "))
+
+balance += deposit
+
+print(balance)
+
+#Concepts - Assignment operators
