@@ -1,0 +1,10 @@
+# Real-world Example: Grocery Shopping
+rice = 80        # variable assignment
+oil = 150
+milk = 35
+
+bill = rice + oil + milk
+
+print("Total Bill =", bill)
+
+# New Concepts - Integer, Addition, Assignment
