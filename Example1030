@@ -1,0 +1,15 @@
+# Mini Project
+# Student Report Card
+
+name = input("Student Name: ")
+
+physics = int(input("Physics: "))
+chemistry = int(input("Chemistry: "))
+maths = int(input("Maths: "))
+
+total = physics + chemistry + maths
+average = total / 3
+
+print("Name:", name)
+print("Total:", total)
+print("Average:", average)
