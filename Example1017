@@ -1,0 +1,8 @@
+# Temperature Converter
+celsius = float(input("Temperature: "))
+
+fahrenheit = (celsius * 9/5) + 32
+
+print(fahrenheit)
+
+#Concepts - float, Formula
