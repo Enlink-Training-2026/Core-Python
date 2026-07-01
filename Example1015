@@ -1,0 +1,9 @@
+# Salary Calculator
+basic = 30000
+allowance = 5000
+
+salary = basic + allowance
+
+print("Salary =", salary)
+
+# Concepts - Variables, Arithmetic
