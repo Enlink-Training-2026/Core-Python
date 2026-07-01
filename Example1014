@@ -1,0 +1,9 @@
+# Real-world Example: Shop Calculator
+price = int(input("Price: "))
+quantity = int(input("Quantity: "))
+
+total = price * quantity
+
+print("Amount =", total)
+
+# Concepts - int(), Multiplication
