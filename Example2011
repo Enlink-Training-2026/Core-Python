@@ -1,0 +1,16 @@
+# library Management System - New Concepts Functions, Lists, Modular Programming
+
+books = ["Python", "Java", "C++"]
+
+def show_books():
+    print("\nAvailable Books")
+    for book in books:
+        print(book)
+
+def add_book():
+    book = input("Book Name: ")
+    books.append(book)
+
+show_books()
+add_book()
+show_books()
