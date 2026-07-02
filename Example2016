@@ -1,0 +1,17 @@
+# Hospital Registration System - New Concepts - List of Dictionaries
+
+patients = []
+
+name = input("Patient Name: ")
+
+age = input("Age: ")
+
+patients.append({
+
+"Name":name,
+
+"Age":age
+
+})
+
+print(patients)
