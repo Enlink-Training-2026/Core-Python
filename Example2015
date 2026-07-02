@@ -1,0 +1,23 @@
+#Hotel Booking - New Concepts - Nested Dictionary
+
+rooms = {
+
+101:"Available",
+
+102:"Booked",
+
+103:"Available"
+
+}
+
+room = int(input("Room Number: "))
+
+if rooms[room] == "Available":
+
+    rooms[room] = "Booked"
+
+    print("Room Booked")
+
+else:
+
+    print("Already Booked")
