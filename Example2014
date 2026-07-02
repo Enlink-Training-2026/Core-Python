@@ -1,0 +1,17 @@
+# Inventory Management - New Concepts, Dictionary
+
+inventory = {
+
+"Rice":120,
+
+"Sugar":80,
+
+"Milk":35
+
+}
+
+print(inventory)
+
+inventory["Tea"]=150
+
+print(inventory)
