@@ -1,0 +1,9 @@
+# Employee Payroll - New Concepts Functions with Parameters
+
+def salary(basic, allowance, bonus):
+
+    total = basic + allowance + bonus
+
+    return total
+
+print(salary(25000,5000,3000))
