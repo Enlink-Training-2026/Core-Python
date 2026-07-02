@@ -1,0 +1,9 @@
+# Banking System (First OOP) New Concepts Class and Object
+
+class Bank:
+
+    balance = 5000
+
+account = Bank()
+
+print(account.balance)
