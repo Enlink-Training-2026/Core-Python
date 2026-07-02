@@ -1,0 +1,40 @@
+# ATM Simulator (Using while Loops) Real-world Problem
+
+#Build a simple ATM that lets a customer check their balance, deposit money, withdraw money, and exit.
+
+#New Concepts - while, Menu-driven programming, Repeating programs
+
+balance = 5000
+
+while True:
+    print("\nATM MENU")
+    print("1. Check Balance")
+    print("2. Deposit")
+    print("3. Withdraw")
+    print("4. Exit")
+
+    choice = input("Choose: ")
+
+    if choice == "1":
+        print("Balance =", balance)
+
+    elif choice == "2":
+        amount = float(input("Deposit Amount: "))
+        balance += amount
+        print("Deposit Successful")
+
+    elif choice == "3":
+        amount = float(input("Withdraw Amount: "))
+
+        if amount <= balance:
+            balance -= amount
+            print("Please Collect Cash")
+        else:
+            print("Insufficient Balance")
+
+    elif choice == "4":
+        print("Thank you")
+        break
+
+    else:
+        print("Invalid Choice")
