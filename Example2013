@@ -1,0 +1,14 @@
+# Shopping Cart - New Concepts Lists, Loops, Functions
+
+cart = []
+
+while True:
+
+    item = input("Enter Item (done to stop): ")
+
+    if item == "done":
+        break
+
+    cart.append(item)
+
+print(cart)
