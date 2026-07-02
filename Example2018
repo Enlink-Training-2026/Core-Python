@@ -1,0 +1,11 @@
+# Expense Tracker - New Concepts - CSV File
+
+import csv
+
+with open("expense.csv","a",newline="") as file:
+
+    writer = csv.writer(file)
+
+    writer.writerow(["Food",500])
+
+print("Expense Saved")
