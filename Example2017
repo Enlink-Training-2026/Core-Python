@@ -1,0 +1,11 @@
+# Student Database - New Concepts - File Handling
+
+file = open("students.txt","a")
+
+name = input("Student Name: ")
+
+file.write(name+"\n")
+
+file.close()
+
+print("Saved")
