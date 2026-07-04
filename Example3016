@@ -1,0 +1,16 @@
+#self means the current object.
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("Ravi")
+s2 = Student("Meena")
+
+print(s1.name)
+print(s2.name)
+
+#Output:
+
+#Ravi
+#Meena
