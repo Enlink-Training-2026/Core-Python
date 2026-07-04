@@ -1,0 +1,30 @@
+# Multiple Inheritance No 2 - Food Delivery
+#Customer
+ #    │
+#PremiumCustomer
+ #    │
+#VIPCustomer
+
+class Customer:
+
+    def order(self):
+        print("Food Ordered")
+
+
+class PremiumCustomer(Customer):
+
+    def free_delivery(self):
+        print("Free Delivery")
+
+
+class VIPCustomer(PremiumCustomer):
+
+    def personal_assistant(self):
+        print("Dedicated Manager")
+
+
+v = VIPCustomer()
+
+v.order()
+v.free_delivery()
+v.personal_assistant()
