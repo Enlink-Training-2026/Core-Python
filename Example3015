@@ -1,0 +1,13 @@
+#Constructor: __init__
+
+#__init__ runs automatically when an object is created. A better way to do above code
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Ravi", 15)
+
+print(s1.name)
+print(s1.age)
