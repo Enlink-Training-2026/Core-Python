@@ -1,0 +1,13 @@
+#Encapsulation - Encapsulation means protecting data inside a class.
+
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def show_balance(self):
+        print(self.__balance)
+
+acc = BankAccount(5000)
+acc.show_balance()
+
+#__balance is private.
