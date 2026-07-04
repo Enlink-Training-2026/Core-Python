@@ -1,0 +1,22 @@
+#Flying Car - multiple inheritance example 2
+class Car:
+
+    def drive(self):
+        print("Driving on road")
+
+
+class Aircraft:
+
+    def fly(self):
+        print("Flying in sky")
+
+
+class FlyingCar(Car, Aircraft):
+
+    pass
+
+
+fc = FlyingCar()
+
+fc.drive()
+fc.fly()
