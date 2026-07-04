@@ -1,0 +1,41 @@
+#Multiple Inheritance -One child has two or more parents.
+
+#Camera
+ #     \
+ #      \
+ #    SmartPhone
+ #      /
+#Speaker
+
+#Example: Smartphone
+
+class Camera:
+
+    def take_photo(self):
+        print("Photo Taken")
+
+
+class Speaker:
+
+    def play_music(self):
+        print("Playing Music")
+
+
+
+class SmartPhone(Camera, Speaker):
+
+    def call(self):
+        print("Calling...")
+
+
+phone = SmartPhone()
+
+phone.take_photo()
+phone.play_music()
+phone.call()
+
+#Output
+
+#Photo Taken
+#Playing Music
+#Calling...
