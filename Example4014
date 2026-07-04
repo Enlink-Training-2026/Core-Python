@@ -1,0 +1,23 @@
+#Bank Account → Savings Account
+class BankAccount:
+
+    def __init__(self, holder, balance):
+        self.holder = holder
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+
+class SavingsAccount(BankAccount):
+
+    def add_interest(self):
+        self.balance *= 1.04
+
+
+acc = SavingsAccount("Kenny", 10000)
+
+acc.deposit(500)
+acc.add_interest()
+
+print(acc.balance)
