@@ -1,0 +1,36 @@
+#Multilevel Inheritance - Grandparent → Parent → Child
+
+#Person
+#   │
+#Employee
+#   │
+#Manager
+
+#Example
+
+class Person:
+
+    def __init__(self, name):
+        self.name = name
+
+    def introduce(self):
+        print("I am", self.name)
+
+
+class Employee(Person):
+
+    def work(self):
+        print("Working")
+
+
+class Manager(Employee):
+
+    def manage(self):
+        print("Managing Team")
+
+
+m = Manager("Kenny")
+
+m.introduce()
+m.work()
+m.manage()
