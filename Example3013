@@ -1,0 +1,12 @@
+#An object is a real thing created from a class.
+
+class Student:
+    pass
+
+s1 = Student()
+
+#Here:
+
+s1
+
+#is an object of the Student class.
