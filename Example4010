@@ -1,0 +1,18 @@
+Inheritance
+
+Inheritance means one class can reuse another class.
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def show_name(self):
+        print(self.name)
+
+class Student(Person):
+    def study(self):
+        print(self.name, "is studying")
+
+s1 = Student("Ravi")
+s1.show_name()
+s1.study()
