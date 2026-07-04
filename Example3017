@@ -1,0 +1,18 @@
+# Adding Methods 
+
+#A method is a function inside a class.
+
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def display(self):
+        print(self.name, self.marks)
+
+s1 = Student("Ravi", 85)
+s1.display()
+
+#Output:
+
+#Ravi 85
