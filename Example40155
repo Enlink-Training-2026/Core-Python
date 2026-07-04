@@ -1,0 +1,36 @@
+#Hierarchical Inheritance - One parent → Many children
+
+#Employee
+ #  │
+ #┌─┴──────────┐
+ #│            │
+#Developer   Tester
+
+#Example
+
+class Employee:
+
+    def login(self):
+        print("Logged into company portal")
+
+
+class Developer(Employee):
+
+    def write_code(self):
+        print("Writing Python Code")
+
+
+class Tester(Employee):
+
+    def test_application(self):
+        print("Testing Application")
+
+
+dev = Developer()
+tester = Tester()
+
+dev.login()
+dev.write_code()
+
+tester.login()
+tester.test_application()
