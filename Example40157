@@ -1,0 +1,38 @@
+#Hybrid Inheritance - Hybrid inheritance combines more than one inheritance type.
+
+ #       Person
+ #       /    \
+ #Teacher      Coach
+ #       \    /
+ #    SportsTeacher
+
+class Person:
+
+    def introduce(self):
+        print("I am a person")
+
+
+class Teacher(Person):
+
+    def teach(self):
+        print("Teaching")
+
+
+class Coach(Person):
+
+    def train(self):
+        print("Training Players")
+
+
+class SportsTeacher(Teacher, Coach):
+
+    def organize_match(self):
+        print("Organizing Tournament")
+
+
+st = SportsTeacher()
+
+st.introduce()
+st.teach()
+st.train()
+st.organize_match()
