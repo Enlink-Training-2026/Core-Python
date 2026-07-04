@@ -1,0 +1,37 @@
+#Hospital - secodn example in hierarchical inheritance
+class Person:
+
+    def walk(self):
+        print("Walking")
+
+
+class Doctor(Person):
+
+    def diagnose(self):
+        print("Diagnosing Patient")
+
+
+class Nurse(Person):
+
+    def assist(self):
+        print("Assisting Doctor")
+
+
+class Patient(Person):
+
+    def take_medicine(self):
+        print("Taking Medicine")
+
+
+d = Doctor()
+n = Nurse()
+p = Patient()
+
+d.walk()
+d.diagnose()
+
+n.walk()
+n.assist()
+
+p.walk()
+p.take_medicine()
