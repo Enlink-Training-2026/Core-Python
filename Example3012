@@ -1,0 +1,10 @@
+# A class is like a blueprint.
+
+# Example: A house plan is not a house. It only tells how to build a house.
+
+#In Python:
+
+class Student:
+    pass
+
+#Here, Student is a class.
