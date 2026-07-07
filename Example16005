@@ -1,0 +1,10 @@
+#Real World Example
+
+#Employee Payroll
+
+def salary(name, amount):
+    print(name, "received ₹", amount)
+
+salary("John", 50000)
+salary("Mary", 65000)
+salary("David", 72000)
