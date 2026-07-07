@@ -1,0 +1,40 @@
+#A Larger Real-World Example: Online Shopping
+class User:
+
+    def __init__(self, name):
+        self.name = name
+
+    def login(self):
+        print(self.name, "logged in")
+
+
+class Customer(User):
+
+    def buy_product(self):
+        print(self.name, "bought a laptop")
+
+
+class Seller(User):
+
+    def add_product(self):
+        print(self.name, "added a product")
+
+
+class Admin(User):
+
+    def remove_user(self):
+        print(self.name, "removed a fake account")
+
+
+customer = Customer("Alice")
+seller = Seller("Bob")
+admin = Admin("Charlie")
+
+customer.login()
+customer.buy_product()
+
+seller.login()
+seller.add_product()
+
+admin.login()
+admin.remove_user()
