@@ -1,0 +1,14 @@
+#Real World Example
+
+#Shopping Cart
+
+def total(price, quantity):
+    return price * quantity
+
+bill = total(250, 4)
+
+print("Total =", bill)
+
+#Output
+
+#Total = 1000
