@@ -1,0 +1,13 @@
+#LESSON 3 — Multiple Parameters
+def student(name, marks):
+    print(name, "scored", marks)
+
+student("John", 95)
+student("Alice", 88)
+student("David", 79)
+
+#Output
+
+#John scored 95
+#Alice scored 88
+#David scored 79
