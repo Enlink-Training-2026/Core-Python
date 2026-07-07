@@ -1,0 +1,27 @@
+#Method Overriding - A child class can provide its own version of a parent method.
+
+class Animal:
+
+    def sound(self):
+        print("Some sound")
+
+
+class Dog(Animal):
+
+    def sound(self):
+        print("Dog Barks")
+
+
+class Cat(Animal):
+
+    def sound(self):
+        print("Cat Meows")
+
+
+Dog().sound()
+Cat().sound()
+
+#Output
+
+#Dog Barks
+#Cat Meows
