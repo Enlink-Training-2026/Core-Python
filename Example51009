@@ -1,0 +1,74 @@
+#Example 5 — Logistics Company (A More Professional Example)
+
+#This resembles what you might encounter in enterprise software.
+
+class Vehicle:
+
+    def __init__(self,
+                 registration_number,
+                 brand):
+
+        self.registration_number = registration_number
+        self.brand = brand
+        self.status = "Available"
+
+    def display(self):
+
+        print("Vehicle :", self.registration_number)
+        print("Brand   :", self.brand)
+        print("Status  :", self.status)
+
+
+class DeliveryTruck(Vehicle):
+
+    def __init__(self,
+                 registration_number,
+                 brand,
+                 capacity):
+
+        super().__init__(
+            registration_number,
+            brand
+        )
+
+        self.capacity = capacity
+        self.current_load = 0
+
+    def load_goods(self, weight):
+
+        if self.current_load + weight <= self.capacity:
+
+            self.current_load += weight
+            print("Goods Loaded")
+
+        else:
+
+            print("Truck Capacity Exceeded")
+
+    def display(self):
+
+        super().display()
+
+        print("Capacity :", self.capacity)
+        print("Load     :", self.current_load)
+
+
+truck = DeliveryTruck(
+    "KL01AB1234",
+    "Ashok Leyland",
+    10000
+)
+
+truck.load_goods(4000)
+
+truck.display()
+
+#Output
+
+#Goods Loaded
+
+#Vehicle : KL01AB1234
+#Brand   : Ashok Leyland
+#Status  : Available
+#Capacity : 10000
+#Load     : 4000
