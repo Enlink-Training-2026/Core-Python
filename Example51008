@@ -1,0 +1,49 @@
+#Example 4 — E-commerce Website
+class Product:
+
+    def __init__(self,
+                 product_id,
+                 name,
+                 price):
+
+        self.product_id = product_id
+        self.name = name
+        self.price = price
+
+
+class Laptop(Product):
+
+    def __init__(self,
+                 product_id,
+                 name,
+                 price,
+                 ram,
+                 processor):
+
+        super().__init__(
+            product_id,
+            name,
+            price
+        )
+
+        self.ram = ram
+        self.processor = processor
+
+    def display(self):
+
+        print(self.product_id)
+        print(self.name)
+        print(self.price)
+        print(self.ram)
+        print(self.processor)
+
+
+lap = Laptop(
+    501,
+    "Dell Inspiron",
+    65000,
+    "16 GB",
+    "Intel i7"
+)
+
+lap.display()
