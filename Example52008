@@ -1,0 +1,74 @@
+#Enterprise ERP System (Intermediate–Advanced)
+
+#Here the parent class performs common setup, and the child extends it with department-specific behavior.
+
+class Employee:
+
+    def __init__(self, emp_id, name, department):
+        print("Initializing Employee...")
+
+        self.emp_id = emp_id
+        self.name = name
+        self.department = department
+        self.permissions = ["Employee Portal"]
+
+    def login(self):
+        print(f"{self.name} logged into the Employee Portal.")
+
+    def show_details(self):
+        print(f"Employee ID : {self.emp_id}")
+        print(f"Name        : {self.name}")
+        print(f"Department  : {self.department}")
+        print(f"Permissions : {self.permissions}")
+
+
+class ProjectManager(Employee):
+
+    def __init__(self, emp_id, name, department, project_name, team_size):
+
+        # Initialize all common employee attributes
+        super().__init__(emp_id, name, department)
+
+        self.project_name = project_name
+        self.team_size = team_size
+
+        # Extend the inherited permissions
+        self.permissions.extend([
+            "Project Dashboard",
+            "Approve Timesheets",
+            "Allocate Resources"
+        ])
+
+    def show_details(self):
+        super().show_details()
+        print(f"Project     : {self.project_name}")
+        print(f"Team Size   : {self.team_size}")
+
+
+pm = ProjectManager(
+    1001,
+    "Sarah Johnson",
+    "Software Development",
+    "Online Banking Platform",
+    18
+)
+
+pm.login()
+print()
+pm.show_details()
+
+#Output
+#Initializing Employee...
+#Sarah Johnson logged into the Employee Portal.
+
+#Employee ID : 1001
+#Name        : Sarah Johnson
+#Department  : Software Development
+#Permissions : ['Employee Portal', 'Project Dashboard', 'Approve Timesheets', 'Allocate Resources']
+#Project     : Online Banking Platform
+#Team Size   : 18
+
+#In this example, super().__init__() initializes all the common employee data. 
+#The ProjectManager class then adds project-specific fields and expands the inherited permissions list. 
+##Enterprise ERP System (Intermediate–Advanced)
+
