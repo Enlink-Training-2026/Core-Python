@@ -1,0 +1,26 @@
+#super() lets a child class call the parent class's methods without repeating code.
+
+class Employee:
+
+    def __init__(self, name):
+        self.name = name
+
+
+class Manager(Employee):
+
+    def __init__(self, name, department):
+
+        super().__init__(name)
+
+        self.department = department
+
+
+m = Manager("Kenny", "HR")
+
+print(m.name)
+print(m.department)
+
+#Output
+
+#Kenny
+#HR
