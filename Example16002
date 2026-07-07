@@ -1,0 +1,25 @@
+#LESSON 2 — Parameters
+
+#Functions become useful when they accept information.
+
+#Example
+
+def greet(name):
+    print("Welcome", name)
+
+greet("John")
+greet("Alice")
+greet("David")
+
+#Output
+
+#Welcome John
+#Welcome Alice
+#Welcome David
+
+#Here, name is called a parameter.
+
+#John
+#Alice
+#David
+#are called arguments.
