@@ -1,0 +1,64 @@
+#Employee Management System - Suppose Microsoft has thousands of employees.
+
+#Every employee has:
+
+#Name
+#Employee ID
+#Salary
+#Department
+
+#These belong to each employee individually (instance variables).
+
+#But all employees work for the same company.
+
+#The company name and yearly bonus percentage are common to everyone (class variables).
+
+class Employee:
+
+    # Class Variables (Shared by every employee)
+    company = "Microsoft"
+    annual_bonus_percent = 12
+
+    def __init__(self, emp_id, name, department, salary):
+
+        # Instance Variables
+        self.emp_id = emp_id
+        self.name = name
+        self.department = department
+        self.salary = salary
+
+    def display(self):
+        print("------------------------")
+        print("Company :", Employee.company)
+        print("ID      :", self.emp_id)
+        print("Name    :", self.name)
+        print("Dept    :", self.department)
+        print("Salary  :", self.salary)
+
+    def calculate_bonus(self):
+        bonus = self.salary * Employee.annual_bonus_percent / 100
+        print("Annual Bonus :", bonus)
+
+
+e1 = Employee(101, "John", "HR", 80000)
+e2 = Employee(102, "Alice", "Finance", 120000)
+e3 = Employee(103, "David", "IT", 150000)
+
+e1.display()
+e1.calculate_bonus()
+
+e2.display()
+e2.calculate_bonus()
+
+e3.display()
+e3.calculate_bonus()
+
+#Output
+#
+#ID      : 101
+#Name    : John
+#Dept    : HR
+#Salary  : 80000
+#Annual Bonus : 9600
+
+#Company : Microsoft
