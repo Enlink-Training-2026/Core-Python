@@ -1,0 +1,47 @@
+LESSON 11 — Nested Functions
+
+A function can be defined inside another function.
+
+Think of a hospital.
+
+Hospital
+    ├── Reception
+    ├── Pharmacy
+    └── Billing
+
+The hospital controls all three departments.
+
+Similarly,
+
+Main Function
+    ├── Inner Function
+    ├── Inner Function
+Example 1
+def hospital():
+
+    def reception():
+        print("Patient Registration")
+
+    reception()
+
+hospital()
+
+Output
+
+Patient Registration
+
+Notice
+
+hospital()
+      |
+      +---- reception()
+
+The inner function cannot be called directly.
+
+reception()
+
+Output
+
+NameError
+
+because it exists only inside hospital().
