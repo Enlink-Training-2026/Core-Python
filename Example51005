@@ -1,0 +1,47 @@
+#Employee Management System - Imagine you're writing software for a multinational company.
+
+class Employee:
+
+    def __init__(self, emp_id, name):
+        print("Creating Employee...")
+
+        self.emp_id = emp_id
+        self.name = name
+        self.salary = 0
+
+    def display(self):
+        print(f"ID : {self.emp_id}")
+        print(f"Name : {self.name}")
+        print(f"Salary : {self.salary}")
+
+
+class SoftwareEngineer(Employee):
+
+    def __init__(self, emp_id, name, programming_language):
+
+        # Initialize Employee first
+        super().__init__(emp_id, name)
+
+        self.programming_language = programming_language
+        self.salary = 120000
+
+    def display(self):
+        super().display()
+        print("Programming Language :", self.programming_language)
+
+
+engineer = SoftwareEngineer(
+    101,
+    "Alice",
+    "Python"
+)
+
+engineer.display()
+
+#Output
+#Creating Employee...
+
+#ID : 101
+#Name : Alice
+#Salary : 120000
+#Programming Language : Python
