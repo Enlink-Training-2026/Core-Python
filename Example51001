@@ -1,0 +1,15 @@
+#Constructors (__init__) in Depth
+
+#Learn how constructors initialize object state and support default values.
+
+class Laptop:
+    def __init__(self, brand, ram=8, storage=512):
+        self.brand = brand
+        self.ram = ram
+        self.storage = storage
+
+l1 = Laptop("Dell")
+l2 = Laptop("HP", 16, 1024)
+
+print(l1.__dict__)
+print(l2.__dict__)
