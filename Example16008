@@ -1,0 +1,23 @@
+#LESSON 5 — Multiple Return Values
+
+#Python can return more than one value.
+
+def calculate(a, b):
+
+    total = a + b
+    difference = a - b
+    product = a * b
+
+    return total, difference, product
+
+x, y, z = calculate(20, 5)
+
+print(x)
+print(y)
+print(z)
+
+#Output
+
+#25
+#15
+#100
