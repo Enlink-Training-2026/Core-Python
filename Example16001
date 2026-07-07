@@ -1,0 +1,20 @@
+#Real World Example Imagine a school. Every student must receive an ID card. Instead of typing the same code repeatedly...
+
+#print("Creating ID card for John")
+#print("Creating ID card for Mary")
+#print("Creating ID card for David")
+
+#We write
+
+def create_id():
+    print("Creating Student ID Card")
+
+create_id()
+create_id()
+create_id()
+
+#Output
+
+#Creating Student ID Card
+#Creating Student ID Card
+#Creating Student ID Card
