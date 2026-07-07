@@ -1,0 +1,56 @@
+#Banking Software - Imagine every bank account has common information.
+
+#Account
+
+#Account Number
+#Owner
+#Balance
+
+#Different account types add more.
+
+class BankAccount:
+
+    def __init__(self, account_number, owner):
+
+        self.account_number = account_number
+        self.owner = owner
+        self.balance = 0
+
+    def show(self):
+        print("Account :", self.account_number)
+        print("Owner   :", self.owner)
+        print("Balance :", self.balance)
+
+
+class SavingsAccount(BankAccount):
+
+    def __init__(self,
+                 account_number,
+                 owner,
+                 interest_rate):
+
+        super().__init__(account_number, owner)
+
+        self.interest_rate = interest_rate
+
+    def show(self):
+        super().show()
+        print("Interest :", self.interest_rate)
+
+
+acc = SavingsAccount(
+    "SB101",
+    "John",
+    6.5
+)
+
+acc.balance = 50000
+
+acc.show()
+
+#Output
+
+#Account : SB101
+#Owner   : John
+#Balance : 50000
+#Interest : 6.5
