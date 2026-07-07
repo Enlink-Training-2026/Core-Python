@@ -1,0 +1,16 @@
+#Real World Example
+
+#Bank
+
+def withdraw(customer):
+    print(customer, "has withdrawn money.")
+
+withdraw("John")
+withdraw("Mary")
+withdraw("Peter")
+
+#Output
+
+#John has withdrawn money.
+#Mary has withdrawn money.
+#Peter has withdrawn money.
