@@ -1,0 +1,10 @@
+#LESSON 6 — Default Parameters
+def greet(name="Guest"):
+    print("Welcome", name)
+
+greet()
+greet("John")
+
+#Output
+
+#Welcome Guest
