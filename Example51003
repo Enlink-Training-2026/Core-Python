@@ -1,0 +1,44 @@
+#Example 2: Banking System (More Enterprise-like)
+
+#Imagine a bank with 2 million customers.
+
+#Every customer has
+
+#Account Number
+#Customer Name
+#Balance
+
+#These are different for everyone.
+
+#But Bank Name, Interest Rate, IFSC Code are common.
+
+class BankAccount:
+
+    bank_name = "State National Bank"
+    interest_rate = 6.5
+    ifsc = "SNBK000100"
+
+    def __init__(self, account_no, customer, balance):
+        self.account_no = account_no
+        self.customer = customer
+        self.balance = balance
+
+    def show(self):
+        print("---------------------")
+        print("Bank :", BankAccount.bank_name)
+        print("Customer :", self.customer)
+        print("Account :", self.account_no)
+        print("Balance :", self.balance)
+
+    def yearly_interest(self):
+        interest = self.balance * BankAccount.interest_rate / 100
+        print("Interest =", interest)
+
+
+a1 = BankAccount(1001, "John", 250000)
+a2 = BankAccount(1002, "Alice", 400000)
+a3 = BankAccount(1003, "David", 900000)
+
+a1.yearly_interest()
+a2.yearly_interest()
+a3.yearly_interest()
