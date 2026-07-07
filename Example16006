@@ -1,0 +1,16 @@
+#LESSON 4 — Return Values
+
+#A function should usually return a value rather than just printing it.
+
+def add(a, b):
+    return a + b
+
+result = add(40, 60)
+
+print(result)
+
+#Output
+
+#100
+
+#Think of return as sending the answer back to the caller.
