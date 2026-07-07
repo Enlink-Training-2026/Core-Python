@@ -1,0 +1,13 @@
+#Real World Example
+
+def create_profile(**user):
+
+    for key, value in user.items():
+        print(key, ":", value)
+
+create_profile(
+    name="John",
+    city="London",
+    email="john@gmail.com",
+    mobile="9999999999"
+)
