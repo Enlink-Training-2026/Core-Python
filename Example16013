@@ -1,0 +1,19 @@
+#LESSON 9 — **kwargs
+
+#Unknown number of named arguments.
+
+def employee(**details):
+
+    print(details)
+
+employee(
+    name="John",
+    age=25,
+    salary=60000
+)
+
+#Output
+
+#{'name':'John',
+ #'age':25,
+# 'salary':60000}
