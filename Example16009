@@ -1,0 +1,17 @@
+#Real World Example
+
+#Employee Salary Calculation
+
+def salary_details(basic):
+
+    hra = basic * 0.40
+    da = basic * 0.20
+    gross = basic + hra + da
+
+    return hra, da, gross
+
+hra, da, gross = salary_details(50000)
+
+print("HRA:", hra)
+print("DA :", da)
+print("Gross:", gross)
