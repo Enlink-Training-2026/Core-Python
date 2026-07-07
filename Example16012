@@ -1,0 +1,17 @@
+#LESSON 8 — *args
+
+#Suppose you don't know how many numbers the user will provide.
+
+def add(*numbers):
+
+    print(numbers)
+
+add(1)
+add(1, 2)
+add(1, 2, 3)
+
+#Output
+
+#(1,)
+#(1, 2)
+#(1, 2, 3)
