@@ -1,0 +1,14 @@
+#Real World Example
+
+#Online Shopping
+
+def order(item, quantity=1):
+    print(quantity, item)
+
+order("Laptop")
+order("Mouse", 3)
+
+#Output
+
+#1 Laptop
+#3 Mouse
