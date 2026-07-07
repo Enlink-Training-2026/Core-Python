@@ -1,0 +1,13 @@
+#LESSON 10 — Local vs Global Variables
+company = "Google"
+
+def employee():
+
+    department = "IT"
+
+    print(company)
+    print(department)
+
+employee()
+#company is a global variable.
+#department is a local variable.
