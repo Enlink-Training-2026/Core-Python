@@ -1,0 +1,24 @@
+#Real World Example - Bank
+
+def process_transaction():
+
+    def verify_pin():
+        print("PIN Verified")
+
+    def deduct_money():
+        print("Money Deducted")
+
+    def print_receipt():
+        print("Receipt Printed")
+
+    verify_pin()
+    deduct_money()
+    print_receipt()
+
+process_transaction()
+
+ #Output
+
+#PIN Verified
+#Money Deducted
+#Receipt Printed
