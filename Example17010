@@ -1,0 +1,16 @@
+#Real World Example 1 — Company Employees
+
+#Imagine an HR system.
+
+def calculate_salary():
+    print("Calculating salary...")
+
+employee_task = calculate_salary
+
+employee_task()
+
+#Output
+
+#Calculating salary...
+
+#The company stores the job in another variable.
