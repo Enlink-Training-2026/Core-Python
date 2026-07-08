@@ -1,0 +1,19 @@
+#Lesson 4 — Functions Inside a Dictionary
+def deposit():
+    print("Money deposited")
+
+def withdraw():
+    print("Money withdrawn")
+
+bank = {
+    "1": deposit,
+    "2": withdraw
+}
+
+choice = "1"
+
+bank[choice]()
+
+#Output
+
+#Money deposited
