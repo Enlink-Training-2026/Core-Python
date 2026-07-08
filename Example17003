@@ -1,0 +1,44 @@
+#LESSON 12 — Recursive Functions
+
+#A recursive function calls itself.
+
+#Think about climbing stairs.
+
+#Step 5
+
+#calls
+
+#Step 4
+
+#calls
+
+#Step 3
+
+#calls
+
+#Step 2
+
+#calls
+
+#Step 1
+#Example
+
+def countdown(n):
+
+    if n == 0:
+        print("Lift Off!")
+        return
+
+    print(n)
+
+    countdown(n-1)
+
+countdown(5)
+
+#Output
+
+#5
+#4
+#3
+#2
+#1
