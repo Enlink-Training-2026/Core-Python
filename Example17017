@@ -1,0 +1,17 @@
+#Lesson 7 — Function IDs - Everything in Python has an identity.
+
+def hello():
+    pass
+
+print(id(hello))
+
+x = hello
+
+print(id(x))
+
+#Output
+
+#2590405732416
+#2590405732416
+
+#Same memory location.
