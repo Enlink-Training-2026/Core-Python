@@ -1,0 +1,25 @@
+#Lesson 3 — Functions Inside a List
+
+#Since functions are objects...
+
+#they can live inside lists.
+
+def add():
+    print("Adding...")
+
+def delete():
+    print("Deleting...")
+
+def update():
+    print("Updating...")
+
+menu = [add, delete, update]
+
+for task in menu:
+    task()
+
+#Output
+
+#Adding...
+#Deleting...
+#Updating...
