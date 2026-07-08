@@ -1,0 +1,18 @@
+#LESSON 13 — Lambda Functions
+
+#Lambda = one-line function.
+
+#Instead of
+
+#def square(x):
+    #return x*x
+
+#Write
+
+square = lambda x: x*x
+
+print(square(5))
+
+#Output
+
+#25
