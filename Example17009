@@ -1,0 +1,19 @@
+Real World Example - Factory
+
+#Morning Shift
+
+#↓
+
+#Assign machine
+
+#↓
+
+#Operator
+
+def machine():
+
+    print("Machine Started")
+
+operator = machine
+
+operator()
