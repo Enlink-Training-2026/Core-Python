@@ -1,0 +1,23 @@
+#Real World Example 4 — Payment Gateway
+def pay_by_card():
+    print("Paid using Credit Card")
+
+def pay_by_upi():
+    print("Paid using UPI")
+
+def pay_by_netbanking():
+    print("Paid using Net Banking")
+
+payment = pay_by_upi
+
+payment()
+
+#Output
+
+#Paid using UPI
+
+#Tomorrow the company can simply change
+
+#payment = pay_by_card
+
+#No other code changes.
