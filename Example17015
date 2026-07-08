@@ -1,0 +1,15 @@
+#Lesson 5 — Passing Functions Around
+def hello():
+    print("Hello")
+
+f = hello
+
+print(type(f))
+
+#Output
+
+#<class 'function'>
+
+#Functions are objects of type
+
+#function
