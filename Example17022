@@ -1,0 +1,40 @@
+#Lesson 11 — Building a Mini Command Processor
+def start():
+    print("System Started")
+
+def stop():
+    print("System Stopped")
+
+def restart():
+    print("Restarting...")
+
+commands = {
+    "start": start,
+    "stop": stop,
+    "restart": restart
+}
+
+while True:
+
+    cmd = input("Command: ")
+
+    if cmd == "exit":
+        break
+
+    if cmd in commands:
+        commands[cmd]()
+    else:
+        print("Unknown command")
+
+#Output
+
+#Command: start
+#System Started
+
+#Command: restart
+#Restarting...
+
+#Command: stop
+#System Stopped
+
+#This is the same pattern used in many command-line tools.
