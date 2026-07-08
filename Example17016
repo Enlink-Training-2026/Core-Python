@@ -1,0 +1,10 @@
+#Lesson 6 — Comparing Function Objects
+def test():
+    pass
+
+a = test
+b = test
+
+print(a == b)
+
+#Output - True - Because both refer to the same function object.
