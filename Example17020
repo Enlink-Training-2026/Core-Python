@@ -1,0 +1,13 @@
+#Lesson 9 — Function Aliasing
+def save():
+    print("Saved")
+
+backup = save
+
+save()
+backup()
+
+#Output
+
+#Saved
+#Saved
