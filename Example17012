@@ -1,0 +1,25 @@
+#Real World Example 2 — Restaurant Kitchen
+
+#Every order has steps.
+
+def chop():
+    print("Chopping vegetables")
+
+def fry():
+    print("Frying")
+
+def serve():
+    print("Serving food")
+
+recipe = [chop, fry, serve]
+
+for step in recipe:
+    step()
+
+#Output
+
+#Chopping vegetables
+#Frying
+#Serving food
+
+#Each recipe step is actually a function object.
