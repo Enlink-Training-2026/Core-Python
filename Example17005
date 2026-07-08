@@ -1,0 +1,38 @@
+#Real World Example - Company Organization Chart
+
+#CEO
+
+   #Manager
+
+      #Team Lead
+
+            #Employee
+
+#Every employee may again have employees.
+
+#Recursive traversal is perfect.
+
+company = {
+    "CEO": {
+        "Manager": {
+            "Lead": {
+                "Developer": {}
+            }
+        }
+    }
+}
+
+def show(org, level=0):
+
+    for person in org:
+        print("   "*level + person)
+        show(org[person], level+1)
+
+show(company)
+
+#Output
+
+#CEO
+   #Manager
+      #Lead
+         #Developer
