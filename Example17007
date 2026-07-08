@@ -1,0 +1,24 @@
+#Sorting Employees
+employees = [
+
+    ("John",50000),
+
+    ("Mary",80000),
+
+    ("David",65000)
+
+]
+
+employees.sort(key=lambda emp: emp[1])
+
+print(employees)
+
+Output
+
+[
+('John',50000),
+('David',65000),
+('Mary',80000)
+]
+
+#This is used everywhere.
