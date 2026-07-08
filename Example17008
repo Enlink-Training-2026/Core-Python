@@ -1,0 +1,28 @@
+#LESSON 14 — Functions are Objects
+
+#In Python, functions are objects.
+
+def greet():
+
+    print("Welcome")
+
+print(type(greet))
+
+#Output
+
+#<class 'function'>
+
+#Store it in another variable.
+
+def hello():
+    print("Hello")
+
+x = hello
+
+x()
+
+#Output
+
+#Hello
+
+#Both variables point to the same function.
