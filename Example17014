@@ -1,0 +1,30 @@
+#Real World Example 3 — ATM Machine
+
+#Instead of
+
+#if choice==1
+#elif choice==2
+#elif choice==3
+
+#Use
+
+def balance():
+    print("Balance is ₹20,000")
+
+def deposit():
+    print("Depositing...")
+
+def withdraw():
+    print("Withdrawing...")
+
+menu = {
+    1: balance,
+    2: deposit,
+    3: withdraw
+}
+
+choice = int(input("Choice: "))
+
+menu[choice]()
+
+#Professional programs often use this technique.
