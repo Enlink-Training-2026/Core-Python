@@ -1,0 +1,19 @@
+#Lesson 8 — Replacing Functions Dynamically
+def gmail():
+    print("Sending via Gmail")
+
+def outlook():
+    print("Sending via Outlook")
+
+send_email = gmail
+
+send_email()
+
+send_email = outlook
+
+send_email()
+
+#Output
+
+#Sending via Gmail
+#Sending via Outlook
