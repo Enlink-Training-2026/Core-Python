@@ -1,0 +1,14 @@
+import numpy as np
+
+marks = np.array([
+    [80, 85, 90],
+    [70, 75, 82]
+])
+
+print("Array:")
+print(marks)
+
+print("Dimensions:", marks.ndim)
+print("Shape:", marks.shape)
+print("Number of values:", marks.size)
+print("Data type:", marks.dtype)
